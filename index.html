@@ -8,10 +8,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilos.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
     
 </head>
 <body>
-    <header class="cabecalho"></header>
+    <header class="cabecalho">
+        <img class="logo" src="./src/imagens/logo.svg" alt="Logo X-Men">
+    </header>
 
     <main class="selecao-de-personagens">
         <section class="personagens">
@@ -46,12 +52,12 @@
                 </li>
 
                 <li class="personagem" id="magneto">
-                    <img class="personagem-grande" src="./src/imagens/card-magneto.jpg" alt="Personagem Magneto">
+                    <img class="personagem" src="./src/imagens/card-magneto.jpg" alt="Personagem Magneto">
                 </li>
             </ul>
         </section>
         <section class="personagem-selecionado">
-            <img src="./src/imagens/card-ciclope.png" alt="Personagem Selecionado">
+            <img src="./src/imagens/card-ciclope.png" alt="Personagem Selecionado" class="personagem-grande">
 
             <div class="informacoes-personagem">
                 <h2 class="nome-personagem" id="nome-personagem">Ciclope</h2>

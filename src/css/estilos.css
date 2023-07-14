@@ -1,0 +1,92 @@
+body{
+    font-family: "Oxanium", cursive;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+body::before{
+    content: "";
+    background-image: url('../imagens/bg-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+}
+
+.selecao-de-personagens{
+    display: flex;
+    /*flex-direction: row; Direção dos conteiner-filhos*/
+    align-items: center;/*propriedade especifica o alinhamento padrão para itens dentro de um flexbox ou contêiner de grade(verticalmente)*/
+    gap: 30px;
+    min-height: calc(100vh - 152px);
+    justify-content: center;
+  
+}
+.selecao-de-personagens .lista-de-personagens{
+    display: flex;
+    flex-wrap: wrap; /*Por padrão, os flex items vão todos tentar se encaixar em uma só linha. Com esta propriedade você pode modificar esse comportamento e permitir que os ítens quebrem para uma linha seguinte conforme for necessário.*/
+    gap: 30px; /*A gap propriedade define o tamanho do espaço entre as linhas e entre as colunas no layout flexbox, grid ou multi-coluna*/
+    justify-content: center; /*propriedade alinha os itens do contêiner flexível quando os itens não usam todo o espaço disponível no eixo principal (horizontalmente)*/
+}
+
+.selecao-de-personagens .personagens{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 585px;
+    gap: 25px;
+}
+
+.selecao-de-personagens .personagens .titulo {
+    font-size: 20px;
+    letter-spacing: 4px; /*propriedade aumenta ou diminui o espaço entre os caracteres em um texto.*/
+    text-transform: uppercase;
+    border-bottom: 2px solid #47f4ff;
+    width: 100%;
+    text-align: center;
+}
+
+.lista-de-personagens .personagens img{
+    width: 100%;
+    height: 100%;
+}
+
+.lista-de-personagens .personagem.selecionado{
+    box-shadow: 0px 0px 24px 5px #0271f7;
+}
+
+.personagem-selecionado{
+
+    text-align: center;
+    max-height: 530px;
+}
+
+.personagem-selecionado .personagem-grande {
+    width: 430px;
+    height: 430px;
+}
+
+.personagem-selecionado .nome-personagem {
+    border-bottom: 2px solid #47f4ff;
+    width: 100%;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.personagem-selecionado .descricao-personagem {
+    font-size: 16px;
+    line-height: 22px; /*Altura da linha*/
+    text-align: center;
+    margin-top: 20px;
+    width: 420px;
+}
+
