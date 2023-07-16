@@ -26,7 +26,7 @@ personagens.forEach((personagem) => {
     personagem.addEventListener('mouseenter', () => {
 
         if(window.innerWidth < 450) {
-            window.scrollTo({top: 0, behavior: 'smooth'});
+            window.scrollTo({top: 0, behavior: 'smooth'}); //método rola o documento para as coordenadas especificadas
         }
 
         // passo 3 - verificar se já existe um personagem selecionado, se sim, devemos remover a seleção dele
